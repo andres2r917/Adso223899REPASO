@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>formulario</h2>
+    <form action="contacto.php">
+    <label for="">nombre</label>
+    <input type="text">
+    <button type="submit">ingresar</button>
+    <button type="reset"></button>
+    <form action="">
+    </form>
+    <br><br>
+    <br>
+    <hr>
+    <form action="">
+        <input type="text" maxlength="20" minlength="1" required>
+        <button>ingresar</button>
+        <input type="button" value="enviar">
+        <input type="checkbox" >F
+        <input type="radio">M
+        <input type="color" >
+        <br>
+        <input type="date">
+        <input type="datetime">
+        <br>
+        <input type="email">
+        <input type="button" name="" value="enviar">
+        <br>
+        <input type="file">
+        <input type="number" min="1" max="20">
+        <br>
+        <input type="month">
+        <br>
+        <input type="password" >
+        <input type="submit">
+    </form>
+    <br><br>
+    <hr>
+    <form action="" method="get">
+        <label for="">nombre</label>
+        <input type="text"  name="nombre" narequired>
+        <br><br>
+        <label for="">apellido</label>
+        <input type="text" name="nombre" required>
+        <button type="submit">enviar</button>
+    </form>
+    <br><br>
+    <hr>
+      <form action="" method="post">
+        <label for="">nombre</label>
+        <input type="text"  name="nombre" narequired>
+        <br><br>
+        <label for="">apellido</label>
+        <input type="text" name="nombre" required>
+        <button type="submit">enviar</button>
+    </form>
+    <br><br>
+    <hr>
+    <H1> TALLER PRACTICO </H1>
+    <p> Atributos principales del (form) y su función
+ 1. Action
+
+Indica a dónde se envían los datos del formulario cuando el usuario presiona el botón de enviar.
+
+Especifica la URL o el archivo que procesará la información.
+
+Ejemplo:
+
+form action="procesar.php"
+
+Significa que los datos se enviarán al archivo procesar.php.
+<br>
+2. Method
+
+ Define cómo se envían los datos del formulario.
+
+Existen dos métodos principales:
+
+GET:
+
+Envía los datos a través de la URL.
+
+La información es visible.
+
+Se usa para búsquedas.
+
+POST:
+
+Envía los datos de forma oculta (no visible en la URL).
+
+Es más seguro.
+
+Se usa para registros, inicios de sesión y envío de datos importantes.
+
+ Ejemplo:
+
+form method="POST"
+
+<br>
+3. Autocomplete
+
+ Permite activar o desactivar el autocompletado del navegador.
+
+on → El navegador guarda y sugiere datos escritos anteriormente.
+
+off → No guarda ni muestra datos previos.
+
+Ejemplo:
+
+form autocomplete="off"
+<br>
+4. Target
+
+ Indica dónde se mostrará la respuesta del formulario después de enviarlo.
+
+Valores más usados:
+
+self → En la misma pestaña (valor por defecto).
+
+blank → En una nueva pestaña.
+
+parent → En el marco padre.
+
+top → En toda la ventana del navegador.
+
+Ejemplo:
+
+form target="_blank"
+<br>
+5. Novalidate
+
+ Desactiva la validación automática de HTML5.
+
+Normalmente, el navegador valida campos obligatorios o correos electrónicos antes de enviar el formulario.
+Si se usa novalidate, el formulario se envía sin validar.
+
+Ejemplo:
+
+form novalidate
+</p>
+<br><br>
+<h2>EJERCICIO 1</h2>
+<form action="" method="post"> 
+<label for="">nombre</label>
+<input type="" name="nombre">
+<button type="">enviar</button>
+<br><br>
+<label for="">Correo</label>
+<input type="email">
+<button type="">enviar</button>
+<br><br>
+<label for="">contraseña</label>
+<input type="password">
+<button type="">enviar</button>
+</form>
+
+<br>
+<br>
+<h2>EJERCICIO 2</h2>
+    <form action="" method="get">
+        <label for="">nombre</label>
+        <input type="text"  name="nombre" narequired>
+        <button type="">enviar</button>
+        <br><br>
+        <label for="">ciudad</label>
+        <input type="text" name="nombre" required>
+        <button type="submit">enviar</button>    
+    </form>
+<br><br>
+
+<h3>EJERCICIO 3</h3>
+<h3>parte 1</h3>
+<form action="enviar" method="post" autocomplete="on">
+        
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br><br>
+        <label>Correo:</label>
+        <input type="email" name="correo" required>
+        <br><br>
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" maxlength="10" minlength="1">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+<br><br>
+<hr>
+<h3>parte 2</h3>
+<form action="#" method="post" autocomplete="off">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+    <br><br>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" required>
+    <br><br>
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telefono" minlength="10" maxlength="10" required>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+    <br><br>
+    <hr>
+
+    <h2>Formulario de Búsqueda</h2>
+
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+        
+        <label>Buscar:</label>
+        <input type="search" name="q" placeholder="Escribe tu búsqueda aquí" required>
+        
+        <button type="submit">Buscar</button>
+
+    </form>
+    <hr>
+    <br><br>
+<h1>DIEGO ANDRES VARGAS ESTIT</h1>
+</body>
+</html>

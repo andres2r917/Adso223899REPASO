@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Gaming</title>
+    <style>
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th,td{
+            border-radius: 1px solid grey;
+            padding: 8px;
+            text-align: center;
+        }
+        caption{
+            color: aquamarine;
+            font-size: 18px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+        }
+    </style>
+</head>
+   <table border="5">
+        <caption><strong>Tabla de Videojuegos</strong></caption>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Plataforma</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Call of Duty</td>
+                <td>Acción</td>
+                <td>PC / PlayStation / Xbox</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>FIFA 24</td>
+                <td>Deportes</td>
+                <td>PC / PlayStation / Xbox</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Minecraft</td>
+                <td>Sandbox</td>
+                <td>Multiplataforma</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>League of Legends</td>
+                <td>MOBA</td>
+                <td>PC</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Total de videojuegos: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+     <table border="5">
+        <caption><strong>Tabla de Videojuegos</strong></caption>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Plataforma</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">Call of Duty</td>
+                <td rowspan="2">Acción</td>
+                <td>PC / PlayStation / Xbox</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">FIFA 26</td>
+                <td>Deportes</td>
+                <td>PC / PlayStation / Xbox</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Minecraft</td>
+                <td>Sandbox</td>
+                <td>Multiplataforma</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="2">League of Legends</td>
+                <td>MOBA</td>
+                <td>PC</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total de videojuegos: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <style>
+        .diashora{
+            background-color: rgb(255, 172, 172)
+        }
+        .hora{
+            background-color: rgb(255, 188, 45);
+        }
+        .descanso{
+         background-color: rgb(206, 200, 119) ;
+        }
+        .mate{
+            background-color: rgb(25, 134, 177);
+        }
+        .cn{
+            background-color: darkseagreen;
+        }
+    </style>
+       <table border="5">
+        <caption><strong>Horario escolar</strong></caption>
+
+        <thead>
+            <tr class="diashora">
+                <th>Hora</th>
+                <th>lunes</th>
+                <th>martes</th>
+                <th>miercoles</th>
+                <th>jueves</th>
+                <th>viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="hora">8:00-9:00</td>
+                <td class="mate">Matematicas</td>
+                <td class="cn">ciencias</td>
+                <td class="h">historia</td>
+                <td>ingles</td>
+                <td>arte</td>
+        </tbody>
+            </tr>
+            <tbody>
+                <tr>
+                <td class="hora">9:00-10:00</td>
+                <td colspan="2">educaion fisica</td>
+                <td class="h">historia</td>
+                <td class="cn">ciencias</td>
+                <td class="mate">matematicas</td> 
+             
+            </tr> 
+            </tbody>
+            <tr>
+                <td class="descanso"  colspan="6">recreo</td>   
+            </tr>
+            <tbody>
+            <tr> 
+                <td class="hora">10:30-11:30</td>
+                <td class="cn">ciencias</td>
+                <td>arte</td>
+                <td colspan="2"> computacion</td>
+                <td class="h">historia</td>
+            </tr>
+            </tbody>
+            <tr> 
+                <td class="descanso" colspan="6">Almuerzo</td>
+            </tr>
+            <tbody>
+           <tr> 
+                <td class="hora">12:30-1:30</td>
+                <td class="mate">matematicas</td>
+                <td>ingles</td>
+                <td>arte</td>
+                <td class="cn" colspan="2">ciencias</td>   
+            </tr>
+            </tbody>
+      
+           <tfoot>
+            <tr>
+            <td class="hora">1:30-2:30</td>
+            <td colspan="6"> Taller de lectura</td>
+            </tr>
+        </tfoot>
+<footer>
+    <h2>Diego andres vargas estit</h2>
+</footer>
+    </table>
+</body>
+</html>
